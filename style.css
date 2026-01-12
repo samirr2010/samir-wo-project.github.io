@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100dvh;
+  background-image: url(windows-11-stock-official-colorful-1920x1080-5666.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.box {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 640px;
+  height: 200px;
+  padding: 150px;
+  margin: 20px;
+
+  animation: boxanima 5s infinite;
+}
+
+@keyframes boxanima {
+  0% {
+    background-color: azure;
+  }
+  25% {
+    background-color: aqua;
+  }
+  50% {
+    background-color: bisque;
+  }
+  75% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: yellow;
+  }
+}
+
+.box_2 {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: anima 5s infinite;
+}
+
+@keyframes anima {
+  0% {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  25% {
+    background-image: url(2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  50% {
+    background-image: url(3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  75% {
+    background-image: url(4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  100% {
+    background-image: url(5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.images {
+  /* Если было 300px, поставь 350px или 400px */
+  width: 650px;
+  /* Можно также использовать проценты, если хочешь адаптивности */
+  /* width: 40%; */
+  margin: 0 auto;
+}
+
+.images img {
+  width: 100%; /* Картинка послушно расширится вместе с контейнером */
+  height: auto;
+  display: block;
+  padding: 30px;
+}
+
+.text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_2 {
+  color: black;
+}
